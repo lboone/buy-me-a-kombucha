@@ -7,10 +7,9 @@ import Auth from './Auth'
 
 const NavBar = async() => {
   const session = await getServerSession(authOptions)
-  console.log({session})
   return (
-    <header className="bg-white mb-16">
-      <div className="flex justify-between max-w-7xl mx-auto p-4">
+    <header className="bg-white mb-16 w-full">
+      <div className="flex justify-between max-w-7xl mx-auto py-4 px-0">
       <Logo />
       <Menu />
       <Auth

@@ -18,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} text-yellow-900`} >
+      <section className="max-w-7xl mx-auto px-10">
         <NavBar />
         {children}
+        </section>
       </body>
     </html>
   );
